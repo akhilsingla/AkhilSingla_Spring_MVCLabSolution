@@ -6,44 +6,44 @@
     <title>Student Management System for College Fest :- Add Student</title>
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/resources/css/style.css" />
+          href="${pageContext.request.contextPath}/resources/css/style.css"/>
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/resources/css/add-student-style.css" />
+          href="${pageContext.request.contextPath}/resources/css/add-student-style.css"/>
 </head>
 <body>
 
-<div id = "wrapper">
+<div id="wrapper">
     <div id="header">
         <h2>Student Management System for College Fest :- Add/Update Student</h2>
     </div>
 </div>
 
-<div id = "container">
+<div id="container">
 
 
-        <form:form action="saveStudent" modelAttribute="student" method="post">
-            <form:hidden path="id"></form:hidden>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td><form:input path="name"></form:input></td>
-                    </tr>
-                    <tr>
-                        <td>Department</td>
-                        <td><form:input path="department"></form:input></td>
-                    </tr>
-                    <tr>
-                        <td>Country</td>
-                        <td><form:input path="country"></form:input></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Save" class="save"></td>
-                    </tr>
-                    </tbody>
-                </table>
-        </form:form>
+    <form:form action="saveStudent" modelAttribute="student" method="post">
+        <form:hidden path="id"></form:hidden>
+        <table>
+            <tbody>
+            <tr>
+                <td>Name</td>
+                <td><form:input path="name"></form:input></td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td><form:input path="department"></form:input></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><form:input path="country"></form:input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Save" class="save"></td>
+            </tr>
+            </tbody>
+        </table>
+    </form:form>
 
     <div style="clear:both;"></div>
 

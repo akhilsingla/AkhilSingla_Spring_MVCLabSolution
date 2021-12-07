@@ -3,25 +3,18 @@ package com.greatlearning.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Student")
-public class Student
-{
-    public void setId(int id) {
-        this.id = id;
-    }
-
+@Table(name = "Student")
+public class Student {
     @Column(name = "Student_Id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(name = "Name")
     private String name;
     @Column(name = "Department")
     private String department;
     @Column(name = "Country")
     private String country;
-
     public Student(String name, String department, String country) {
         this.name = name;
         this.department = department;
@@ -34,6 +27,10 @@ public class Student
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
