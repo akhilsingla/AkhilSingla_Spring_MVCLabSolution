@@ -15,6 +15,7 @@ public class Student {
     private String department;
     @Column(name = "Country")
     private String country;
+
     public Student(String name, String department, String country) {
         this.name = name;
         this.department = department;

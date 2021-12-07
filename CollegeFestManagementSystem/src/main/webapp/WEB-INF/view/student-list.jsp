@@ -23,11 +23,12 @@
         <div>
             <p style="color: blue">
                 <c:choose>
-                    <c:when test="${empty param.isSuccess}">
-                    </c:when>
-                    <c:otherwise>
+                    <c:when test="${not empty param.isSuccess}">
                         Student Added/Updated Successfully
-                    </c:otherwise>
+                    </c:when>
+                    <c:when test="${not empty param.isDeleteSuccess}">
+                        Student Deleted Successfully
+                    </c:when>
                 </c:choose></p></div>
         <table>
             <tr>
